@@ -1,0 +1,16 @@
+data = "=:869=8m====9>9l96=>9<;h==8k8=9<979>=9=>9<;h9==>;h==9o9j"
+
+hex(flag) ^ key = data
+use - https://gchq.github.io/CyberChef !
+Note: key in CyberChef is hex option!
+
+key[i]:
+    0. a = ? | 57 ^ a ^ 99 ^ 53; a > 0; a < 10
+    1. b = a + 8 | 69 ^ b ^ 37 ^ 10
+    2. c = a * b | 51 ^ c ^ 30 ^ 40
+    3. d = с - 50 | 36 ^ d ^ 80 ^ 47
+    4. e = 34 + a + b + d - c | 42 ^ e ^ 67
+    5. 82 ^ key[0] ^ key[1]
+    6. (((a ** e) ** (e ** a)) % 777) ^ 8
+    7. 1392 ^ key[3] ^ key[1] ^ 1337
+    8. 73 ^ key[7] ^ key[6] ^ key[5] ^ key[4] ^ key[3] ^ key[2] ^ key[1] ^ key[0]
