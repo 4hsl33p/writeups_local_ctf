@@ -5,7 +5,7 @@ Take this: 872990182fa33d1da83a21c6e1a598dafee45776
  
 Дан запароленный архив archive.rar и описание к таску, в котором есть строка **872990182fa33d1da83a21c6e1a598dafee45776** — очевидно, хэш.
 
-[Hash-identifier](https://github.com/blackploit/hash-identifier) показывает, что, скорее всего, это sha1, о чем можно было догадаться из вида хэша или описания.
+[Hash-identifier](https://github.com/blackploit/hash-identifier) показывает, что, скорее всего, это **sha1**, о чем можно было догадаться из вида хэша или описания.
 
 Попробовав пробить по обычному sha1 не получаем результата.
 
@@ -25,6 +25,6 @@ hashcat -m 18500 -a 0 '872990182fa33d1da83a21c6e1a598dafee45776' rockyou.txt
 
 Открываем архив и получаем картинку с флагом.
 
-![flag](flag.jpg)
+![flag](img/flag.jpg)
 
-Флаг — 4hsl33p{haha_sha_ome}
+Флаг — *4hsl33p{haha_sha_ome}*
